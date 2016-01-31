@@ -1,4 +1,5 @@
-var exec = require('child_process').exec;
+const exec = require('child_process').exec;
+const spawn = require('child_process').spawn;
 var util = require('util');
 
 module.exports = function (grunt) {
@@ -13,7 +14,7 @@ module.exports = function (grunt) {
             if (stdout) console.log(stdout)
             if (stderr) console.error(stderr);
             console.log("------------------------------------")
-            done()
+            // done()
         });
     });
 
